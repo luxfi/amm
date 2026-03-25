@@ -2,7 +2,7 @@
   "name": "@luxamm/v3-staker",
   "description": "Canonical liquidity mining contract for Uniswap V3",
   "license": "GPL-3.0-or-later",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "https://uniswap.org",
   "keywords": [
     "uniswap",
@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "3.4.1-solc-0.7-2",
-    "@luxamm/v3-core": "1.0.0",
+    "@luxamm/v3-core": "^1.0.0",
     "@luxamm/v3-periphery": "^1.0.1"
   },
   "devDependencies": {
