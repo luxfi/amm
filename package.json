@@ -1,0 +1,9 @@
+{
+  "name": "@luxamm/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "publish:all": "pnpm -r publish --access public --no-git-checks"
+  }
+}

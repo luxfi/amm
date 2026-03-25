@@ -1,0 +1,10 @@
+{
+  "name": "@luxamm/client-notification-service",
+  "version": "0.0.114",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

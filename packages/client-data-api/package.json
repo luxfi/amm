@@ -1,0 +1,10 @@
+{
+  "name": "@luxamm/client-data-api",
+  "version": "0.0.163",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

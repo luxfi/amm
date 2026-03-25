@@ -1,0 +1,10 @@
+{
+  "name": "@luxamm/client-unirpc-v2",
+  "version": "0.0.104",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

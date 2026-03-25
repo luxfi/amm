@@ -1,0 +1,10 @@
+{
+  "name": "@luxamm/client-liquidity",
+  "version": "0.3.102",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}

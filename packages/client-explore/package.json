@@ -1,0 +1,10 @@
+{
+  "name": "@luxamm/client-explore",
+  "version": "0.0.119",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ]
+}
