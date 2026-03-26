@@ -1,6 +1,6 @@
 {
   "name": "@luxamm/client-platform-service",
-  "version": "0.0.118",
+  "version": "0.0.119",
   "publishConfig": {
     "access": "public"
   },

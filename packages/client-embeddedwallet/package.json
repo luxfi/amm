@@ -1,6 +1,6 @@
 {
   "name": "@luxamm/client-embeddedwallet",
-  "version": "0.0.120",
+  "version": "0.0.121",
   "publishConfig": {
     "access": "public"
   },
