@@ -1,0 +1,40 @@
+{
+  "name": "@luxamm/sdk",
+  "version": "3.0.3",
+  "author": "Lux",
+  "repository": "https://github.com/luxfi/amm.git",
+  "keywords": [
+    "lux",
+    "dex"
+  ],
+  "license": "MIT",
+  "main": "./dist/cjs/src/index.js",
+  "typings": "./dist/types/src/index.d.ts",
+  "module": "./dist/esm/src/index.js",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@ethersproject/abi": "^5.5.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/providers": "^5.7.0",
+    "@luxamm/permit2-sdk": "^1.4.0",
+    "@luxamm/sdk-core": "^7.13.0",
+    "ethers": "^5.7.0",
+    "tiny-invariant": "^1.1.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/src/index.d.ts",
+      "import": "./dist/esm/src/index.js",
+      "require": "./dist/cjs/src/index.js"
+    }
+  },
+  "sideEffects": false
+}
