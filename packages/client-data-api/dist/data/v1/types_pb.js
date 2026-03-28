@@ -442,66 +442,66 @@ proto3.util.setEnumType(OnChainTransactionStatus, "data.v1.OnChainTransactionSta
     { no: 2, name: "ON_CHAIN_TRANSACTION_STATUS_FAILED" },
 ]);
 /**
- * @generated from enum data.v1.UniswapXOrderType
+ * @generated from enum data.v1.LXOrderType
  */
-export var UniswapXOrderType;
-(function (UniswapXOrderType) {
+export var LXOrderType;
+(function (LXOrderType) {
     /**
      * @generated from enum value: UNISWAP_X_ORDER_TYPE_DUTCH = 0;
      */
-    UniswapXOrderType[UniswapXOrderType["DUTCH"] = 0] = "DUTCH";
+    LXOrderType[LXOrderType["DUTCH"] = 0] = "DUTCH";
     /**
      * @generated from enum value: UNISWAP_X_ORDER_TYPE_LIMIT = 1;
      */
-    UniswapXOrderType[UniswapXOrderType["LIMIT"] = 1] = "LIMIT";
+    LXOrderType[LXOrderType["LIMIT"] = 1] = "LIMIT";
     /**
      * @generated from enum value: UNISWAP_X_ORDER_TYPE_DUTCH_V2 = 2;
      */
-    UniswapXOrderType[UniswapXOrderType["DUTCH_V2"] = 2] = "DUTCH_V2";
+    LXOrderType[LXOrderType["DUTCH_V2"] = 2] = "DUTCH_V2";
     /**
      * @generated from enum value: UNISWAP_X_ORDER_TYPE_PRIORITY = 3;
      */
-    UniswapXOrderType[UniswapXOrderType["PRIORITY"] = 3] = "PRIORITY";
-})(UniswapXOrderType || (UniswapXOrderType = {}));
-// Retrieve enum metadata with: proto3.getEnumType(UniswapXOrderType)
-proto3.util.setEnumType(UniswapXOrderType, "data.v1.UniswapXOrderType", [
+    LXOrderType[LXOrderType["PRIORITY"] = 3] = "PRIORITY";
+})(LXOrderType || (LXOrderType = {}));
+// Retrieve enum metadata with: proto3.getEnumType(LXOrderType)
+proto3.util.setEnumType(LXOrderType, "data.v1.LXOrderType", [
     { no: 0, name: "UNISWAP_X_ORDER_TYPE_DUTCH" },
     { no: 1, name: "UNISWAP_X_ORDER_TYPE_LIMIT" },
     { no: 2, name: "UNISWAP_X_ORDER_TYPE_DUTCH_V2" },
     { no: 3, name: "UNISWAP_X_ORDER_TYPE_PRIORITY" },
 ]);
 /**
- * @generated from enum data.v1.UniswapXTransactionStatus
+ * @generated from enum data.v1.LXTransactionStatus
  */
-export var UniswapXTransactionStatus;
-(function (UniswapXTransactionStatus) {
+export var LXTransactionStatus;
+(function (LXTransactionStatus) {
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_OPEN = 0;
      */
-    UniswapXTransactionStatus[UniswapXTransactionStatus["OPEN"] = 0] = "OPEN";
+    LXTransactionStatus[LXTransactionStatus["OPEN"] = 0] = "OPEN";
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_EXPIRED = 1;
      */
-    UniswapXTransactionStatus[UniswapXTransactionStatus["EXPIRED"] = 1] = "EXPIRED";
+    LXTransactionStatus[LXTransactionStatus["EXPIRED"] = 1] = "EXPIRED";
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_ERROR = 2;
      */
-    UniswapXTransactionStatus[UniswapXTransactionStatus["ERROR"] = 2] = "ERROR";
+    LXTransactionStatus[LXTransactionStatus["ERROR"] = 2] = "ERROR";
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_INSUFFICIENT_FUNDS = 3;
      */
-    UniswapXTransactionStatus[UniswapXTransactionStatus["INSUFFICIENT_FUNDS"] = 3] = "INSUFFICIENT_FUNDS";
+    LXTransactionStatus[LXTransactionStatus["INSUFFICIENT_FUNDS"] = 3] = "INSUFFICIENT_FUNDS";
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_FILLED = 4;
      */
-    UniswapXTransactionStatus[UniswapXTransactionStatus["FILLED"] = 4] = "FILLED";
+    LXTransactionStatus[LXTransactionStatus["FILLED"] = 4] = "FILLED";
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_CANCELLED = 5;
      */
-    UniswapXTransactionStatus[UniswapXTransactionStatus["CANCELLED"] = 5] = "CANCELLED";
-})(UniswapXTransactionStatus || (UniswapXTransactionStatus = {}));
-// Retrieve enum metadata with: proto3.getEnumType(UniswapXTransactionStatus)
-proto3.util.setEnumType(UniswapXTransactionStatus, "data.v1.UniswapXTransactionStatus", [
+    LXTransactionStatus[LXTransactionStatus["CANCELLED"] = 5] = "CANCELLED";
+})(LXTransactionStatus || (LXTransactionStatus = {}));
+// Retrieve enum metadata with: proto3.getEnumType(LXTransactionStatus)
+proto3.util.setEnumType(LXTransactionStatus, "data.v1.LXTransactionStatus", [
     { no: 0, name: "UNISWAP_X_TRANSACTION_STATUS_OPEN" },
     { no: 1, name: "UNISWAP_X_TRANSACTION_STATUS_EXPIRED" },
     { no: 2, name: "UNISWAP_X_TRANSACTION_STATUS_ERROR" },
@@ -1513,7 +1513,7 @@ Transaction.runtime = proto3;
 Transaction.typeName = "data.v1.Transaction";
 Transaction.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "on_chain", kind: "message", T: OnChainTransaction, oneof: "transaction" },
-    { no: 2, name: "uniswap_x", kind: "message", T: UniswapXTransaction, oneof: "transaction" },
+    { no: 2, name: "lx_order", kind: "message", T: LXTransaction, oneof: "transaction" },
     { no: 3, name: "fiat_on_ramp", kind: "message", T: FiatOnRampTransaction, oneof: "transaction" },
     { no: 4, name: "plan", kind: "message", T: PlanTransaction, oneof: "transaction" },
 ]);
@@ -1715,9 +1715,9 @@ ProtocolMetadata.fields = proto3.util.newFieldList(() => [
     { no: 2, name: "logo_url", kind: "scalar", T: 9 /* ScalarType.STRING */ },
 ]);
 /**
- * @generated from message data.v1.UniswapXTransaction
+ * @generated from message data.v1.LXTransaction
  */
-export class UniswapXTransaction extends Message {
+export class LXTransaction extends Message {
     constructor(data) {
         super();
         /**
@@ -1745,31 +1745,31 @@ export class UniswapXTransaction extends Message {
          */
         this.encodedOrder = "";
         /**
-         * @generated from field: data.v1.UniswapXOrderType order_type = 11;
+         * @generated from field: data.v1.LXOrderType order_type = 11;
          */
-        this.orderType = UniswapXOrderType.DUTCH;
+        this.orderType = LXOrderType.DUTCH;
         /**
-         * @generated from field: data.v1.UniswapXTransactionStatus status = 12;
+         * @generated from field: data.v1.LXTransactionStatus status = 12;
          */
-        this.status = UniswapXTransactionStatus.OPEN;
+        this.status = LXTransactionStatus.OPEN;
         proto3.util.initPartial(data, this);
     }
     static fromBinary(bytes, options) {
-        return new UniswapXTransaction().fromBinary(bytes, options);
+        return new LXTransaction().fromBinary(bytes, options);
     }
     static fromJson(jsonValue, options) {
-        return new UniswapXTransaction().fromJson(jsonValue, options);
+        return new LXTransaction().fromJson(jsonValue, options);
     }
     static fromJsonString(jsonString, options) {
-        return new UniswapXTransaction().fromJsonString(jsonString, options);
+        return new LXTransaction().fromJsonString(jsonString, options);
     }
     static equals(a, b) {
-        return proto3.util.equals(UniswapXTransaction, a, b);
+        return proto3.util.equals(LXTransaction, a, b);
     }
 }
-UniswapXTransaction.runtime = proto3;
-UniswapXTransaction.typeName = "data.v1.UniswapXTransaction";
-UniswapXTransaction.fields = proto3.util.newFieldList(() => [
+LXTransaction.runtime = proto3;
+LXTransaction.typeName = "data.v1.LXTransaction";
+LXTransaction.fields = proto3.util.newFieldList(() => [
     { no: 1, name: "chain_id", kind: "scalar", T: 13 /* ScalarType.UINT32 */ },
     { no: 2, name: "timestamp_millis", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 3, name: "offerer", kind: "scalar", T: 9 /* ScalarType.STRING */ },
@@ -1780,8 +1780,8 @@ UniswapXTransaction.fields = proto3.util.newFieldList(() => [
     { no: 8, name: "output_token_amount", kind: "message", T: Amount },
     { no: 9, name: "expiry_millis", kind: "scalar", T: 4 /* ScalarType.UINT64 */ },
     { no: 10, name: "encoded_order", kind: "scalar", T: 9 /* ScalarType.STRING */ },
-    { no: 11, name: "order_type", kind: "enum", T: proto3.getEnumType(UniswapXOrderType) },
-    { no: 12, name: "status", kind: "enum", T: proto3.getEnumType(UniswapXTransactionStatus) },
+    { no: 11, name: "order_type", kind: "enum", T: proto3.getEnumType(LXOrderType) },
+    { no: 12, name: "status", kind: "enum", T: proto3.getEnumType(LXTransactionStatus) },
 ]);
 /**
  * @generated from message data.v1.FiatOnRampTransaction

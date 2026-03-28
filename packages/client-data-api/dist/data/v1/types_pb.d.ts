@@ -339,9 +339,9 @@ export declare enum OnChainTransactionStatus {
     FAILED = 2
 }
 /**
- * @generated from enum data.v1.UniswapXOrderType
+ * @generated from enum data.v1.LXOrderType
  */
-export declare enum UniswapXOrderType {
+export declare enum LXOrderType {
     /**
      * @generated from enum value: UNISWAP_X_ORDER_TYPE_DUTCH = 0;
      */
@@ -360,9 +360,9 @@ export declare enum UniswapXOrderType {
     PRIORITY = 3
 }
 /**
- * @generated from enum data.v1.UniswapXTransactionStatus
+ * @generated from enum data.v1.LXTransactionStatus
  */
-export declare enum UniswapXTransactionStatus {
+export declare enum LXTransactionStatus {
     /**
      * @generated from enum value: UNISWAP_X_TRANSACTION_STATUS_OPEN = 0;
      */
@@ -1127,10 +1127,10 @@ export declare class Transaction extends Message<Transaction> {
         case: "onChain";
     } | {
         /**
-         * @generated from field: data.v1.UniswapXTransaction uniswap_x = 2;
+         * @generated from field: data.v1.LXTransaction lx_order = 2;
          */
-        value: UniswapXTransaction;
-        case: "uniswapX";
+        value: LXTransaction;
+        case: "lxOrder";
     } | {
         /**
          * @generated from field: data.v1.FiatOnRampTransaction fiat_on_ramp = 3;
@@ -1331,9 +1331,9 @@ export declare class ProtocolMetadata extends Message<ProtocolMetadata> {
     static equals(a: ProtocolMetadata | PlainMessage<ProtocolMetadata> | undefined, b: ProtocolMetadata | PlainMessage<ProtocolMetadata> | undefined): boolean;
 }
 /**
- * @generated from message data.v1.UniswapXTransaction
+ * @generated from message data.v1.LXTransaction
  */
-export declare class UniswapXTransaction extends Message<UniswapXTransaction> {
+export declare class LXTransaction extends Message<LXTransaction> {
     /**
      * @generated from field: uint32 chain_id = 1;
      */
@@ -1375,21 +1375,21 @@ export declare class UniswapXTransaction extends Message<UniswapXTransaction> {
      */
     encodedOrder: string;
     /**
-     * @generated from field: data.v1.UniswapXOrderType order_type = 11;
+     * @generated from field: data.v1.LXOrderType order_type = 11;
      */
-    orderType: UniswapXOrderType;
+    orderType: LXOrderType;
     /**
-     * @generated from field: data.v1.UniswapXTransactionStatus status = 12;
+     * @generated from field: data.v1.LXTransactionStatus status = 12;
      */
-    status: UniswapXTransactionStatus;
-    constructor(data?: PartialMessage<UniswapXTransaction>);
+    status: LXTransactionStatus;
+    constructor(data?: PartialMessage<LXTransaction>);
     static readonly runtime: typeof proto3;
-    static readonly typeName = "data.v1.UniswapXTransaction";
+    static readonly typeName = "data.v1.LXTransaction";
     static readonly fields: FieldList;
-    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): UniswapXTransaction;
-    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): UniswapXTransaction;
-    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): UniswapXTransaction;
-    static equals(a: UniswapXTransaction | PlainMessage<UniswapXTransaction> | undefined, b: UniswapXTransaction | PlainMessage<UniswapXTransaction> | undefined): boolean;
+    static fromBinary(bytes: Uint8Array, options?: Partial<BinaryReadOptions>): LXTransaction;
+    static fromJson(jsonValue: JsonValue, options?: Partial<JsonReadOptions>): LXTransaction;
+    static fromJsonString(jsonString: string, options?: Partial<JsonReadOptions>): LXTransaction;
+    static equals(a: LXTransaction | PlainMessage<LXTransaction> | undefined, b: LXTransaction | PlainMessage<LXTransaction> | undefined): boolean;
 }
 /**
  * @generated from message data.v1.FiatOnRampTransaction
